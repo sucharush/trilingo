@@ -5,17 +5,26 @@
   right: 16px;
   z-index: 2147483647;
   box-sizing: border-box;
-  width: 340px;
+  width: 360px;
   max-width: calc(100vw - 32px);
   max-height: calc(100vh - 32px);
   overflow: auto;
-  padding: 16px;
+  padding: 18px;
   border: 1px solid #d1d5db;
-  border-radius: 10px;
+  border-radius: 12px;
   background: #fff;
   color: #1f2937;
-  box-shadow: 0 4px 20px #0003;
-  font: 14px/1.5 system-ui, sans-serif;
+  box-shadow: 0 8px 28px #0003;
+  font: 14px/1.65 system-ui, sans-serif;
+  text-align: left;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+#trilingual-reader-panel * {
+  box-sizing: border-box;
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 #trilingual-reader-panel header {
@@ -26,27 +35,72 @@
   gap: 12px;
 }
 
-#trilingual-reader-panel strong {
+#trilingual-reader-panel h2 {
   all: unset;
-  font-weight: 700;
+  font: 600 15px/1.4 system-ui, sans-serif;
+}
+
+#trilingual-reader-panel section {
+  all: unset;
+  display: block;
+  margin-top: 16px;
+}
+
+#trilingual-reader-panel section + section {
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+}
+
+#trilingual-reader-panel h3 {
+  all: unset;
+  display: block;
+  margin-bottom: 6px;
+  color: #4b5563;
+  font: 600 12px/1.5 system-ui, sans-serif;
 }
 
 #trilingual-reader-panel button {
   all: unset;
-  padding: 0 6px;
-  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  color: #4b5563;
   font: 24px/1 system-ui, sans-serif;
   cursor: pointer;
 }
 
+#trilingual-reader-panel button:hover {
+  background: #f3f4f6;
+}
+
+#trilingual-reader-panel:focus-visible,
 #trilingual-reader-panel button:focus-visible {
   outline: 2px solid #2563eb;
+  outline-offset: 2px;
 }
 
 #trilingual-reader-panel p {
   all: unset;
   display: block;
-  margin-top: 12px;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
+}
+
+#trilingual-reader-panel p[data-state="loading"],
+#trilingual-reader-panel p[data-state="error"] {
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: #f9fafb;
+  color: #4b5563;
+}
+
+#trilingual-reader-panel p[data-state="error"] {
+  border-color: #fecaca;
+  background: #fef2f2;
+  color: #991b1b;
 }
