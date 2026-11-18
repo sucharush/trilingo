@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Trilingual Reader",
   "version": "0.1.0",
-  "description": "Translate selected English text into Chinese in a small floating panel.",
+  "description": "Show selected text alongside English and Chinese translations in a small floating panel.",
   "permissions": ["contextMenus", "activeTab", "scripting"],
   "host_permissions": ["https://api.mymemory.translated.net/*"],
   "background": {

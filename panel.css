@@ -90,6 +90,7 @@
   overflow-wrap: anywhere;
 }
 
+#trilingual-reader-panel p[data-state="pending"],
 #trilingual-reader-panel p[data-state="loading"],
 #trilingual-reader-panel p[data-state="error"] {
   padding: 10px 12px;
@@ -103,4 +104,15 @@
   border-color: #fecaca;
   background: #fef2f2;
   color: #991b1b;
+}
+
+#trilingual-reader-panel .trilingual-reader-notice {
+  display: block;
+  margin-top: 8px;
+  color: #4b5563;
+  font-size: 12px;
+}
+
+#trilingual-reader-panel .trilingual-reader-notice[hidden] {
+  display: none;
 }
