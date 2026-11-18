@@ -1,0 +1,52 @@
+#trilingual-reader-panel {
+  all: initial;
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 2147483647;
+  box-sizing: border-box;
+  width: 340px;
+  max-width: calc(100vw - 32px);
+  max-height: calc(100vh - 32px);
+  overflow: auto;
+  padding: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: #fff;
+  color: #1f2937;
+  box-shadow: 0 4px 20px #0003;
+  font: 14px/1.5 system-ui, sans-serif;
+}
+
+#trilingual-reader-panel header {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+#trilingual-reader-panel strong {
+  all: unset;
+  font-weight: 700;
+}
+
+#trilingual-reader-panel button {
+  all: unset;
+  padding: 0 6px;
+  color: inherit;
+  font: 24px/1 system-ui, sans-serif;
+  cursor: pointer;
+}
+
+#trilingual-reader-panel button:focus-visible {
+  outline: 2px solid #2563eb;
+}
+
+#trilingual-reader-panel p {
+  all: unset;
+  display: block;
+  margin-top: 12px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}

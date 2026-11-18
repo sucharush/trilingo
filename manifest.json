@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Trilingual Reader",
+  "version": "0.1.0",
+  "description": "Show selected text in a small floating panel.",
+  "permissions": ["contextMenus", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
